@@ -1,8 +1,36 @@
 # 3D-Printed Line-Follower Chassis
 
+![CAD](https://img.shields.io/badge/CAD-OpenSCAD-blue)
+![Fabrication](https://img.shields.io/badge/fabrication-FDM%203D%20printing-orange)
+![Robot](https://img.shields.io/badge/robot-line%20follower-green)
+![Status](https://img.shields.io/badge/status-fit--check%20prototype-yellow)
+
 ![Assembled line-following robot](media/images/assembled-line-follower.jpg)
 
 Custom one-piece chassis for a line-following and maze-solving robot. The frame was modeled in OpenSCAD, fabricated by 3D printing, and evaluated with the real electronics and sensor layout shown below.
+
+## 30-second overview
+
+| Question | Answer |
+|---|---|
+| What did I design? | A parametric, one-piece F-Maze V5.2 chassis for a line-following and maze-solving robot. |
+| What problem does it solve? | It packages the controller, motors, line sensor, caster, battery, wiring, and HC-SR04 mounts into one printable frame. |
+| What does this repo prove? | Parametric CAD, design-for-additive-manufacturing, mechanical integration, fit checking, and honest validation control. |
+| Best evidence | Editable OpenSCAD, printable STL, real printed chassis, assembled robot, and two public videos. |
+
+## My contribution
+
+- Designed the chassis geometry and mounting layout in OpenSCAD.
+- Created adjustable slots and clearances for uncertain real-world dimensions.
+- Corrected the caster recess so the main plate no longer filled the intended pocket.
+- Produced the STL, printed prototype, assembled hardware, and documented remaining fit risks.
+
+<details>
+<summary><strong>Tóm tắt tiếng Việt</strong></summary>
+
+Khung xe dò line F-Maze V5.2 được thiết kế tham số bằng OpenSCAD và in thành một khối. Thiết kế tích hợp gá mạch, động cơ, cảm biến line, bi đỡ, dây buộc và vị trí HC-SR04; các kích thước chưa đo được được xử lý bằng khe điều chỉnh và cảnh báo kiểm chứng.
+
+</details>
 
 ## Design goals
 
@@ -12,6 +40,14 @@ Custom one-piece chassis for a line-following and maze-solving robot. The frame 
 - Recess and mounting holes for a 3PI-style ball caster.
 - Uprights for an HC-SR04 ultrasonic sensor.
 - Cable-tie and hook-and-loop strap openings.
+
+## Engineering decisions
+
+- **One-piece frame:** reduces assembly hardware and alignment errors.
+- **Y-shaped front truss:** connects the sensor bar to the main frame while limiting material use.
+- **Slotted mounts:** preserve adjustability where component dimensions are not fully verified.
+- **Parametric OpenSCAD source:** makes mounting positions and frame dimensions reviewable and editable.
+- **Explicit fit-check status:** separates measured dimensions from assumptions before competition use.
 
 ## Prototype
 
@@ -78,5 +114,29 @@ Print a small mounting test coupon first where practical.
 - Electronics and line sensor mounted on a prototype.
 - Two demonstration videos included.
 - Final dimensional validation remains required before competition use.
+
+## Validation matrix
+
+| Item | Status |
+|---|---|
+| OpenSCAD assembly preview | Completed |
+| STL export and slicer preview | Completed |
+| Physical chassis print | Completed |
+| Electronics mounted on prototype | Completed |
+| Public motion demonstrations | Completed |
+| Controller and sensor hole spacing | Partially measured |
+| HC-SR04 mounting pitch | Not measured |
+| Axle height and full ground contact | Not verified |
+
+## Skills demonstrated
+
+`OpenSCAD` · `parametric CAD` · `FDM 3D printing` · `design for assembly` · `robot mechanics` · `fit-check prototyping` · `technical risk documentation`
+
+## Next improvements
+
+- Measure the HC-SR04 holes, motor reference surfaces, and caster envelope directly.
+- Add dimensioned drawings and a print-orientation diagram.
+- Record chassis mass, ground clearance, and centre-of-mass data.
+- Publish a validated competition revision after full hardware testing.
 
 No open-source license is declared. All rights are reserved unless the owner adds a license.
