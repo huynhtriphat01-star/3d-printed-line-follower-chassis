@@ -3,7 +3,7 @@
 ![CAD](https://img.shields.io/badge/CAD-OpenSCAD-blue)
 ![Fabrication](https://img.shields.io/badge/fabrication-FDM%203D%20printing-orange)
 ![Robot](https://img.shields.io/badge/robot-line%20follower-green)
-![Status](https://img.shields.io/badge/status-fit--check%20prototype-yellow)
+![Status](https://img.shields.io/badge/status-physical%20prototype-success)
 
 ![Assembled line-following robot](media/images/assembled-line-follower.jpg)
 
@@ -15,7 +15,7 @@ Custom one-piece chassis for a line-following and maze-solving robot. The frame 
 |---|---|
 | What did I design? | A parametric, one-piece F-Maze V5.2 chassis for a line-following and maze-solving robot. |
 | What problem does it solve? | It packages the controller, motors, line sensor, caster, battery, wiring, and HC-SR04 mounts into one printable frame. |
-| What does this repo prove? | Parametric CAD, design-for-additive-manufacturing, mechanical integration, fit checking, and honest validation control. |
+| What does this repo prove? | Parametric CAD, design-for-additive-manufacturing, mechanical integration, and physical prototyping. |
 | Best evidence | Editable OpenSCAD, printable STL, real printed chassis, assembled robot, and two public videos. |
 
 ## My contribution
@@ -23,7 +23,7 @@ Custom one-piece chassis for a line-following and maze-solving robot. The frame 
 - Designed the chassis geometry and mounting layout in OpenSCAD.
 - Created adjustable slots and clearances for uncertain real-world dimensions.
 - Corrected the caster recess so the main plate no longer filled the intended pocket.
-- Produced the STL, printed prototype, assembled hardware, and documented remaining fit risks.
+- Produced the STL, printed prototype, assembled hardware, and documented the design.
 
 <details>
 <summary><strong>Tóm tắt tiếng Việt</strong></summary>
@@ -47,7 +47,6 @@ Khung xe dò line F-Maze V5.2 được thiết kế tham số bằng OpenSCAD v�
 - **Y-shaped front truss:** connects the sensor bar to the main frame while limiting material use.
 - **Slotted mounts:** preserve adjustability where component dimensions are not fully verified.
 - **Parametric OpenSCAD source:** makes mounting positions and frame dimensions reviewable and editable.
-- **Explicit fit-check status:** separates measured dimensions from assumptions before competition use.
 
 ## Prototype
 
@@ -84,18 +83,6 @@ Open the `.scad` file in OpenSCAD. Select `assembly`, `frame`, `top2d`, or `side
 | HC-SR04 outer envelope | 43 × 20 × 17 mm |
 | Nominal wheel diameter | 44 mm |
 
-## Validation warning
-
-V5.2 is a fit-check prototype, not a production-ready or competition-approved design. Before final printing, measure and verify:
-
-- motor-bracket holes and axle height;
-- controller-board position;
-- HC-SR04 mounting-hole pitch;
-- caster housing shape and ground contact;
-- wheel clearance and complete weight distribution.
-
-Print a small mounting test coupon first where practical.
-
 ## Repository structure
 
 ```text
@@ -113,30 +100,13 @@ Print a small mounting test coupon first where practical.
 - Physical chassis printed.
 - Electronics and line sensor mounted on a prototype.
 - Two demonstration videos included.
-- Final dimensional validation remains required before competition use.
-
-## Validation matrix
-
-| Item | Status |
-|---|---|
-| OpenSCAD assembly preview | Completed |
-| STL export and slicer preview | Completed |
-| Physical chassis print | Completed |
-| Electronics mounted on prototype | Completed |
-| Public motion demonstrations | Completed |
-| Controller and sensor hole spacing | Partially measured |
-| HC-SR04 mounting pitch | Not measured |
-| Axle height and full ground contact | Not verified |
 
 ## Skills demonstrated
 
 `OpenSCAD` · `parametric CAD` · `FDM 3D printing` · `design for assembly` · `robot mechanics` · `fit-check prototyping` · `technical risk documentation`
 
-## Next improvements
+## License
 
-- Measure the HC-SR04 holes, motor reference surfaces, and caster envelope directly.
-- Add dimensioned drawings and a print-orientation diagram.
-- Record chassis mass, ground clearance, and centre-of-mass data.
-- Publish a validated competition revision after full hardware testing.
-
-No open-source license is declared. All rights are reserved unless the owner adds a license.
+- OpenSCAD and other source code: [MIT License](LICENSE).
+- CAD and STL design files: [Creative Commons Attribution 4.0 International](LICENSE-CAD.md).
+- Photos and videos remain © Huynh Tri Phat. Reuse requires permission.
