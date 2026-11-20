@@ -1,0 +1,12 @@
+HC-SR04 (do nguoi dung cung cap):
+Dien ap 5VDC
+Dong tieu thu 10-40 mA
+TRIG/ECHO TTL
+Tan so song sieu am: 40kHz
+Goc quet: nho hon 15 do
+Pham vi ly tuong: 2-450cm; thuc te tot nhat duoi 100cm
+Sai so tham khao: 0.3cm trong dieu kien thuan loi
+Kich thuoc bao ngoai: 43 x 20 x 17mm
+Can do TRUC TIEP khoang cach 2 lo bat vit va vi tri 2 lo tren module de kiem chung ga HC-SR04.
+
+Vi tri HC-SR04 tren khung: module ngam theo phuong X ngang 43mm; Z dung 20mm; Y sau 17mm.

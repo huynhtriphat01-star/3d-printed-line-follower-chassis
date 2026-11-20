@@ -1,0 +1,12 @@
+# OpenSCAD temporary and backup files
+*.bak
+*.tmp
+*~
+
+# Slicer-generated files
+*.gcode
+*.3mf
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

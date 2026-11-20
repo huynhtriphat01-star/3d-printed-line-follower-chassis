@@ -1,0 +1,7 @@
+F-MAZE V5.2 | CHUA CHOT IN | 2026-11-09
+1. Da kiem tra V5.1 tren file OpenSCAD goc: PCB truoc 40mm, sau 48mm, 2 hang cach 55mm. Cam bien line 2 lo cach 20mm, bi 3PI 2 lo cach 15mm.
+2. HC-SR04 da cap nhat kich thuoc bao ngoai theo user: 43 x 20 x 17mm; nguon 5VDC, TTL TRIG/ECHO. Khoang cach lo bat HC-SR04 CHUA DO, nen tam ga chua duoc xac nhan tuong thich.
+3. Da sua loi hinh hoc: ho khoet am bi 3PI truoc do co nguy co bi tam khung lap mat; V5.2 tru toan bo khoet am SAU phep hop nhat cac khoi. Bi 3PI rong 22mm, cao 15mm, hai lo tam-tam 15mm; ho khoet thu duong kinh 23.6mm sau 3mm. Van can do bien dang va hinh dang that.
+4. Da giu khung 1 khoi, chua xac nhan cao truc motor (so 25mm dang khong ro mat tham chieu); khong the dam bao ca banh va bi tiep xuc mat dat.
+5. Tuyet doi KHONG chot in de su dung thi dau khi chua thu khop lo motor, PCB, HC-SR04 va bi.
+6. Build va mo hinh assembly trong OpenSCAD: chon MODE assembly hay frame; nhan F5. De xuat file STL chi de preview qua slicer.
